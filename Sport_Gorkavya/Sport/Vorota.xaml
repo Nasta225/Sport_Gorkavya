@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.Sport.Vorota"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="Vorota" Height="700" Width="800" Icon="/image/logotip.png">
+    <Grid>
+        <Canvas Background="SaddleBrown" Height="73" VerticalAlignment="Top">
+            <TextBlock Text="Ворота игровые DFC GOAL302T 120x80x55cv с тентом для отрбатывания ударов" 
+                       TextWrapping="Wrap" Canvas.Left="414" Canvas.Top="84"  Style="{StaticResource Text}"/>
+            <TextBlock Text="Размер ворот 120x80x55 см
+                       Размер упаковки 107,5 х 61 х 6,5 см
+                       Вес упаковки 5,5 кг
+                       Вес нетто 4.5 кг" 
+                       TextWrapping="Wrap" Canvas.Left="415" Canvas.Top="224"  Style="{StaticResource VorotaText}" />
+            <TextBlock Text="Размер ворот 120x80x55 см
+                       Гарантия 12 месяцев
+                       Бренд DFC
+                       Страна произволства: Китай" 
+                       TextWrapping="Wrap" Canvas.Left="417" Canvas.Top="367"  Style="{StaticResource VorotaText}" Width="281" />
+            <TextBlock Text="Матераил Сталь
+                       Тент для отработки ударов: Есть
+                       Складная конструкция: Нет" 
+                       TextWrapping="Wrap" Canvas.Left="420" Canvas.Top="505"  Style="{StaticResource VorotaText}"/>
+            <TextBlock Text="Технические характеристики" FontWeight="Bold" Canvas.Left="420" Canvas.Top="478" FontSize="20"/>
+            <TextBlock Text="Производство" FontWeight="Bold" Canvas.Left="413" Canvas.Top="336" FontSize="20"/>
+            <TextBlock Text="Габариты" FontWeight="Bold" Canvas.Left="415" Canvas.Top="188" FontSize="20"/>
+            <TextBlock Text="Вороты игровые" FontWeight="Bold" Canvas.Left="297" Canvas.Top="11" FontSize="30" Style="{StaticResource Zagalovok}"/>
+            <Button x:Name="Strelka" Background="SaddleBrown" Click="Strelka_Click">
+                <Image Height="68" Source="/Image/strelka.png" Stretch="Fill" />
+            </Button>
+            <TextBlock x:Name="Cymma" Text="3500 Рублей" Canvas.Left="121" Canvas.Top="546" FontSize="30" Foreground="Red"/>
+            <Button Content="Добавить в корзину" Style="{StaticResource Korzina}" Canvas.Left="109" Canvas.Top="600"/>
+            <Image  Source="/Image/vorota1.jpg" Stretch="Fill" Canvas.Left="23" Canvas.Top="140"/>
+        </Canvas>
+    </Grid>
+</Window>

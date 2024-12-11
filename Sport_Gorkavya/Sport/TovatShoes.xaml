@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.Sport.TovatShoes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="TovatShoes" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen" Icon="/image/logotip.png">
+    <Grid>
+        <Canvas>
+            <TextBlock Text="Обувь" Style="{StaticResource Zagalovok}" TextAlignment="Center" Background="#c99159" Height="80" Width="900" />
+            <Button x:Name="Strelka" Background="#c99159" Click="Strelka_Click"  Canvas.Top="-3" BorderBrush="Transparent">
+                <Image Height="80" Source="/Image/strelka.png" Stretch="Fill" Width="120"/>
+            </Button>
+            <TextBlock Text="Кроссовки для девочек GSD Best 3.0" 
+                       TextWrapping="Wrap" Canvas.Top="421" Style="{StaticResource Text4}" Canvas.Left="20" />
+            <Label Content="10000 Рублей" Style="{StaticResource Price}" Canvas.Left="39" Canvas.Top="476" />
+            <TextBlock Text="Кеды Nike Dunk High Lx" 
+                       TextWrapping="Wrap" Canvas.Top="417" Style="{StaticResource Text4}" Canvas.Left="261"/>
+            <Label Content="27000 Рублей" Style="{StaticResource Price}" Canvas.Left="278" Canvas.Top="481"/>
+            <TextBlock Text="Кроссовки женские Demix Serena 4" 
+                       TextWrapping="Wrap" Canvas.Top="415" Style="{StaticResource Text4}" Canvas.Left="472"/>
+            <Label Content="4500 Рублей" Style="{StaticResource Price}" Canvas.Left="502" Canvas.Top="482"/>
+            <TextBlock Text="Кеды женские PUMA Carina Street Lux" 
+                       TextWrapping="Wrap" Canvas.Top="409" Style="{StaticResource Text4}" Canvas.Left="698"/>
+            <Label Content="7000 Рублей" Style="{StaticResource Price}" Canvas.Left="714" Canvas.Top="481"/>
+            <Button x:Name="Korzina" Content="Добавить в корзину" Canvas.Top="529" Width="200" Style="{StaticResource Korzina}" Canvas.Left="20" Click="Korzina_Click"/>
+            <Button x:Name="Korzina2" Content="Добавить в корзину" Canvas.Top="528" Width="200" Style="{StaticResource Korzina}" Canvas.Left="251"/>
+            <Button x:Name="Korzina1" Content="Добавить в корзину" Canvas.Top="528" Width="200" Style="{StaticResource Korzina}" Canvas.Left="476"/>
+            <Button x:Name="Korzina3" Content="Добавить в корзину" Canvas.Top="529" Width="200" Style="{StaticResource Korzina}" Canvas.Left="695" />
+            <Button x:Name="Podrobnee" Content="Подробнее" Canvas.Top="582" Style="{StaticResource KorzinaTovara}" Canvas.Left="49" Width="140"/>
+            <Button x:Name="Podrobnee1" Content="Подробнее" Canvas.Top="585" Style="{StaticResource KorzinaTovara}" Canvas.Left="727" Width="140" />
+            <Button x:Name="Podrobnee2" Content="Подробнее" Canvas.Top="584" Style="{StaticResource KorzinaTovara}" Canvas.Left="510" Width="140"/>
+            <Button x:Name="Podrobnee3" Content="Подробнее" Canvas.Top="583" Style="{StaticResource KorzinaTovara}" Canvas.Left="280" Width="140"/>
+            <Button x:Name="Sneakers1" Canvas.Left="10" Canvas.Top="140" Click="Sneakers1_Click"  Height="270" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/sneakers1.jpg" Height="270" Width="210" Canvas.Left="-8" Canvas.Top="135"/>
+            </Button>
+            <Button x:Name="Sneakers2" Canvas.Left="245" Canvas.Top="140" Click="Sneakers2_Click"  Height="270" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/sneakers2.jpg" Canvas.Top="140" Height="270" Width="200" Canvas.Left="211"/>
+            </Button>
+            <Button x:Name="Sneakers3" Canvas.Left="465" Canvas.Top="140" Click="Sneakers3_Click"   Height="270" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/sneakers3.jpg" Canvas.Top="140" Canvas.Left="440" Height="270" Width="200"/>
+            </Button>
+            <Button x:Name="Sneakers4" Canvas.Left="685" Canvas.Top="140" Click="Sneakers4_Click"  Height="270" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/sneakers4.jpg" Height="270" Width="200" Canvas.Left="656" Canvas.Top="142"/>
+            </Button>
+        </Canvas>
+    </Grid>
+</Window>

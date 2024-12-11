@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.Sport.Oplata1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="Oplata1" Height="450" Width="800">
+    <Grid>
+        <Canvas Background="SaddleBrown" VerticalAlignment="Top" Height="80">
+            <TextBlock Text="Оплата" Style="{StaticResource Zagalovok}" Canvas.Left="331" Canvas.Top="17"/>
+            <TextBlock Text="Налчиными при получении" Style="{StaticResource Text2}" Canvas.Left="142" Canvas.Top="120" />
+            <TextBlock Text="Опата банковской картой" Style="{StaticResource Text2}" Canvas.Top="92" Canvas.Left="142"/>
+            <TextBlock Text="Вы будете перенаправлены на сайт платежной системы XYZ, где вы смоете указать реквизиты Вашей банковской карты." Style="{StaticResource Text2}" Canvas.Top="208" Canvas.Left="8" TextWrapping="Wrap"/>
+            <TextBlock Text="Инструкция по оплате" Style="{StaticResource Text}" Canvas.Left="8" Canvas.Top="179"/>
+            <Button x:Name="Strelka" Background="SaddleBrown" Height="81" Width="93" >
+                <Image Height="72" Source="/Image/strelka.png" Stretch="Fill" Width="89"/>
+            </Button>
+            <RadioButton Height="23" Width="32" Canvas.Left="100" Canvas.Top="100"/>
+            <RadioButton Height="23" Width="32" Canvas.Left="100" Canvas.Top="123"/>
+        </Canvas>
+    </Grid>
+</Window>

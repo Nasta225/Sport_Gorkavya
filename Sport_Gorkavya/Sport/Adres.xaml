@@ -1,0 +1,39 @@
+﻿<Page x:Class="WpfApp1.Sport.Adres"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Sport"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Adres">
+    <Grid Background="White">
+        <Canvas Grid.ColumnSpan="2">
+            <TextBlock Text="Введите адрес доставки. Все поля обязательны к заполнению, если не указано обратное." Style="{StaticResource Text2}" Canvas.Left="15" Canvas.Top="18" TextWrapping="Wrap"/>
+            <TextBlock Text="Страна" Style="{StaticResource Text}" Canvas.Left="8" Canvas.Top="76"/>
+            <TextBlock Text="ФИО" Style="{StaticResource Text}" Canvas.Top="143" Canvas.Left="13"/>
+            <TextBlock Text="Адрес" Style="{StaticResource Text}" Canvas.Top="221" Canvas.Left="11"/>
+            <TextBlock Text="Номер телефона" Style="{StaticResource Text}" Canvas.Top="146" Canvas.Left="345"/>
+            <TextBox Text="" Style="{StaticResource Text3}" Canvas.Left="9" Canvas.Top="255"/>
+            <TextBox Text="Улица, дом, квартира" Style="{StaticResource Text3}" Canvas.Left="12" Canvas.Top="180" FontSize="15"/>
+            <TextBox Text="Город" Style="{StaticResource Text3}" Canvas.Left="10" Canvas.Top="305" FontSize="15" />
+            <TextBox Text="Почтовый индекс" Style="{StaticResource Text3}" Canvas.Left="345" Canvas.Top="255"/>
+            <TextBlock Text="Регион" Style="{StaticResource Text}" Canvas.Left="8" Canvas.Top="345"/>
+            <ComboBox Canvas.Left="8" Canvas.Top="375" Height="31" Width="296">
+                <TextBox Text="Хабаровский Край" Canvas.Left="7" Canvas.Top="354" Background="White"/>
+                <TextBox Text="Приморский край" Canvas.Left="7" Canvas.Top="354"/>
+                <TextBox Text="Краснодарский край" Canvas.Left="7" Canvas.Top="354"/>
+                <TextBox Text="Пермский край" Canvas.Left="7" Canvas.Top="354"/>
+            </ComboBox>
+            <TextBox Style="{StaticResource Text3}" Canvas.Left="342" Canvas.Top="179"/>
+            <ComboBox Canvas.Left="12" Canvas.Top="105" Width="297" IsDropDownOpen="True" Height="30">
+                <TextBox Text="Россия" Canvas.Left="50" Canvas.Top="92" />
+                <TextBox Text="Беларусь" Canvas.Left="50" Canvas.Top="92"/>
+                <TextBox Text="Япония" Canvas.Left="50" Canvas.Top="92"/>
+                <TextBox Text="США" Canvas.Left="50" Canvas.Top="92" />
+                <TextBox Text="Азейрбаджан" Canvas.Left="50" Canvas.Top="92"/>
+                <TextBox Text="Украина" Canvas.Left="50" Canvas.Top="92"/>
+            </ComboBox>
+        </Canvas>
+    </Grid>
+</Page>

@@ -1,0 +1,162 @@
+﻿<Application x:Class="Sport_Gorkavya.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sport_Gorkavya"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Label" x:Key="Label1">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="textBox1">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Korzina">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Background" Value="#c99159"/>
+            <Setter Property="BorderBrush" Value="SaddleBrown"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="KorzinaTovara">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Background" Value="Chocolate"/>
+            <Setter Property="BorderBrush" Value="SaddleBrown"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="But">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Background" Value="#c99159"/>
+            <Setter Property="BorderBrush" Value="SaddleBrown"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="Catalog">
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Text">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Zagalovok">
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="320"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="Price">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="Red"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="VorotaText">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Dostavka">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderBrush" Value="SaddleBrown"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Text2">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="800"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Text4">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="Text3">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+        </Style>
+
+        <Style x:Key="ComboBoxCatalog" TargetType="ComboBox">
+            <Setter Property="BorderBrush" Value="Chocolate"/>
+            <Setter Property="Background" Value="#eba16c"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="ButtonG">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="#FF92E292"/>
+            <Setter Property="BorderBrush" Value="#FF07A407"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="ButtonR">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="Red"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+
+        <Style TargetType="ComboBox" x:Key="ComboBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        
+    </Application.Resources>
+</Application>

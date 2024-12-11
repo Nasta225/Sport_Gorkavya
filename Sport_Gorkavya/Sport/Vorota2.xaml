@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.Sport.Vorota2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="Vorota2" Height="600" Width="800" Icon="/image/logotip.png">
+    <Grid>
+        <Canvas Background="SaddleBrown" Height="71" VerticalAlignment="Top">
+            <Image Source="/Image/vorota2.jpg" Canvas.Left="11" Canvas.Top="78" />
+            <Button x:Name="Strelka" Background="SaddleBrown" Click="Strelka_Click">
+                <Image Source="/Image/strelka.png" Stretch="Fill" Height="66" Width="123"/>
+            </Button>
+            <TextBlock Text="Ворота игровые DFC GOAL302T 120x80x55cv с тентом для отрбатывания ударов " 
+                       TextWrapping="Wrap" Canvas.Left="411" Canvas.Top="70" Style="{StaticResource Text}" />
+            <TextBlock Text="Вороты игровые" FontWeight="Bold" Canvas.Left="297" Canvas.Top="11" FontSize="30" FontFamily="Times New Roman"/>
+            <TextBlock Text="Размер ворот 122 х 90 х 90 см
+                       Размер упаковки 95 х 66 х 2 см
+                       Вес упаковки 1,87 кг
+                       Вес нетто 1,6 кг
+                       Вес нетто 7 кг" 
+                       TextWrapping="Wrap" Canvas.Left="432" Canvas.Top="202"  Style="{StaticResource VorotaText}" Height="137" Width="280"/>
+            <TextBlock Text="Гарантия 12 месяцев
+                             Бренд DFC
+                             Страна производства Тайвань" 
+                       TextWrapping="Wrap" Canvas.Left="430" Canvas.Top="372"  Style="{StaticResource VorotaText}" Height="122" Width="280"/>
+            <TextBlock Text="Материал Пластик
+                             Тент для отработки ударов: Нет
+                             Складная конструкция: Да" 
+                    TextWrapping="Wrap" Canvas.Left="432" Canvas.Top="492"  Style="{StaticResource VorotaText}"/>
+            <TextBlock Text="Габариты" FontWeight="Bold" Canvas.Left="432" Canvas.Top="170" FontSize="20"/>
+            <TextBlock Text="Техничесике характеристики" FontWeight="Bold" Canvas.Left="432" Canvas.Top="460" FontSize="20"/>
+            <TextBlock Text="Производство" FontWeight="Bold" Canvas.Left="430" Canvas.Top="340" FontSize="20"/>
+            <TextBlock x:Name="Cymma" Text="8300 Рублей" Canvas.Left="87" Canvas.Top="447" FontSize="30" Foreground="Red"/>
+            <Button Content="Добавить в корзину" Style="{StaticResource Korzina}" Canvas.Left="80" Canvas.Top="492"/>
+        </Canvas>
+    </Grid>
+</Window>

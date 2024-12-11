@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp1.Sport.Tovar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="Tovar" Height="773" Width="1143"
+        WindowStartupLocation="CenterScreen" Icon="/image/logotip.png">
+    <Grid>
+        <Canvas>
+            <TextBlock Background="#c99159" Height="80" Width="1143"/>
+            <Button x:Name="Korzina" Content="Добавить в корзину" Canvas.Top="453" Style="{StaticResource Korzina}" Canvas.Left="27"  Click="Korzina_Click"/>
+            <Button x:Name="Korzina1" Content="Добавить в корзину" Canvas.Top="450" Style="{StaticResource Korzina}" Canvas.Left="613"/>
+            <Button x:Name="Korzina3" Content="Добавить в корзину" Canvas.Top="444" Style="{StaticResource Korzina}" Canvas.Left="910"/>
+            <Button x:Name="Podrobnee" Content="Подробнее" Canvas.Top="387" Style="{StaticResource KorzinaTovara}" Canvas.Left="47" />
+            <Button x:Name="Podrobnee3" Content="Подробнее" Canvas.Top="380" Style="{StaticResource KorzinaTovara}" Canvas.Left="940"/>
+            <Button x:Name="Podrobnee1" Content="Подробнее" Canvas.Top="383" Style="{StaticResource KorzinaTovara}" Canvas.Left="341"/>
+            <Button x:Name="Podrobnee2" Content="Подробнее" Canvas.Top="383" Style="{StaticResource KorzinaTovara}" Canvas.Left="640"/>
+            <Button x:Name="Vorota" Canvas.Left="15" Canvas.Top="100" Click="Vorota_Click" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/vorota1.jpg" Stretch="Fill" Height="188" Width="219"/>
+            </Button>
+            <Button x:Name="vorota2" Canvas.Left="300" Canvas.Top="100" Click="vorota2_Click_1" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/vorota.jpg" Stretch="Fill"  Height="188" Width="219"/>
+            </Button>
+            <Button x:Name="vorota3" Canvas.Left="900" Canvas.Top="100" Click="vorota3_Click" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/vorota3.jpg" Stretch="Fill"  Height="188" Width="219"/>
+            </Button>
+            <Button x:Name="vorota4" Canvas.Left="600" Canvas.Top="100" Click="vorota4_Click" BorderBrush="SaddleBrown" BorderThickness="3">
+                <Image Source="/Image/vorota2.jpg" Stretch="Fill"  Height="188" Width="219"/>
+            </Button>
+            <Button x:Name="Nazad" BorderBrush="Transparent" Background="Transparent" Click="Nazad_Click">
+                <Image Height="75" Source="/Image/strelka.png"  Width="100"/>
+            </Button>
+            <TextBlock Text="Ворота игровые DFC GOAL302T" 
+                       TextWrapping="Wrap" Canvas.Top="302" Style="{StaticResource Text4}" Canvas.Left="21"/>
+            <TextBlock Text="Ворота игровые DFC GOAL302T" 
+                       TextWrapping="Wrap" Canvas.Top="304" Style="{StaticResource Text4}" Canvas.Left="310"/>
+            <TextBlock Text="Ворота игровые DFC GOAL302T" 
+                       TextWrapping="Wrap" Canvas.Top="299" Style="{StaticResource Text4}" Canvas.Left="626"/>
+            <TextBlock Text="Ворота игровые DFC GOAL302T" 
+                       TextWrapping="Wrap" Canvas.Top="299" Style="{StaticResource Text4}" Canvas.Left="919"/>
+            <Label Content="Ворота" Style="{StaticResource Catalog}" Canvas.Left="517" Canvas.Top="13"/>
+            <Label Content="3500 Рублей" Style="{StaticResource Price}" Canvas.Left="44" Canvas.Top="349" />
+            <Label Content="8000 Рублей" Style="{StaticResource Price}" Canvas.Left="942" Canvas.Top="345"/>
+            <Label Content="3500 Рублей" Style="{StaticResource Price}" Canvas.Left="640" Canvas.Top="345"/>
+            <Label Content="3500 Рублей" Style="{StaticResource Price}" Canvas.Left="344" Canvas.Top="348"/>
+            <Button 
+                x:Name="Korzina_Copy" Width="200" Content="Добавить в корзину" Canvas.Top="450" Style="{StaticResource Korzina}" Canvas.Left="313"/>
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.Sport.Zakaz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Sport"
+        mc:Ignorable="d"
+        Title="Zakaz" Height="750" Width="1120"
+        WindowStartupLocation="CenterScreen" Icon="/image/logotip.png">
+    <Grid>
+        <Canvas>
+            <TextBlock Background="#c99159" Height="80" Width="1120"/>
+            <TextBlock Text="Оформление заказа" x:Name="Dostavka" Style="{StaticResource Zagalovok}"  Canvas.Left="440" Canvas.Top="12" Height="53"/>
+            <Frame x:Name="myFrame" NavigationUIVisibility="Hidden" Height="450" Width="800" Canvas.Left="320" Canvas.Top="223"/>
+            <TextBlock Text="1 товар" x:Name="Tovar" Style="{StaticResource Text}" Canvas.Left="11" Canvas.Top="220" Height="36" Width="93"/>
+            <TextBlock Text="Товары" Style="{StaticResource Text}" Canvas.Left="13" Canvas.Top="512"/>
+            <Label Content="5000 Рублей" Style="{StaticResource Price}" Canvas.Left="163" Canvas.Top="512"/>
+            <TextBlock Text="Доставка" Style="{StaticResource Text}" Canvas.Left="11" Canvas.Top="555"/>
+            <Label Content="300 Рублей" Style="{StaticResource Price}" Canvas.Left="161" Canvas.Top="551"/>
+            <TextBlock Text="ИТОГО" Style="{StaticResource Zagalovok}" Canvas.Left="6" Canvas.Top="604"/>
+            <TextBlock Text="5300 Рублей" Style="{StaticResource Text}" Canvas.Left="163" Canvas.Top="611" />
+            <Button x:Name="Podrobnee" BorderBrush="Transparent" Content="Подробнее" Background="White" Canvas.Left="119" Canvas.Top="214" Height="36" FontSize="20" Foreground="Blue" Click="Podrobnee_Click"/>
+            <Button x:Name="Strelka" Height="81" Width="93" BorderBrush="Transparent" Background="#c99159">
+                <Image Height="72" Source="/Image/strelka.png" Stretch="Fill" Width="89"/>
+            </Button>
+            <Button Content="Доставка" x:Name="DostavkaPoAgresy"
+                 Style="{StaticResource Dostavka}" Canvas.Left="20" Canvas.Top="100" Click="DostavkaPoAgresy_Click" Height="95"/>
+            <Button Content="Самовывоз" x:Name="Camovyzov" Style="{StaticResource Dostavka}" Canvas.Left="250" Canvas.Top="100" Click="Camovyzov_Click"  Height="93"/>
+            <Image Height="37" Source="/Image/car1.jpg" Stretch="Fill" Width="60" Canvas.Left="92" Canvas.Top="103"/>
+            <Image Source="/Image/box.png" Height="47" Canvas.Top="99" Width="67" Canvas.Left="320"/>
+            <Image Height="237" Canvas.Left="17" Source="/Image/sneakers1.jpg" Stretch="Fill" Canvas.Top="253" Width="196"/>
+            <Button x:Name="Next" Content="Продолжить" Canvas.Left="29" Canvas.Top="665" Width="245" Style="{StaticResource Korzina}" Click="Next_Click"/>
+        </Canvas>
+    </Grid>
+</Window>
